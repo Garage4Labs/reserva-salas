@@ -11,13 +11,13 @@ SPEC → plano → teste vermelho → código → teste verde → revisão → c
 ---
 
 ## Passo 0 · Preparar (antes da aula, 5 min)
-1. No navegador, abra **https://github.com/Garage4Labs/reserva-salas** e clique em **Use this template → Create a new repository**. Owner: você. Nome: `reserva-salas`. Clique em **Create repository**.
-2. Clone o **seu** repositório (troque SEU-USUARIO pelo seu usuário do GitHub) e entre na pasta clonada:
+1. **Uma pessoa do grupo** abre **https://github.com/Garage4Labs/reserva-salas**, clica em **Use this template → Create a new repository**, dá o nome `reserva-salas` e clica em **Create repository**. Depois, em **Settings → Collaborators**, convida o resto do grupo.
+2. **Todos** aceitam o convite, clonam o repositório do grupo (troque DONO pelo usuário de quem criou) e entram na pasta clonada:
    ```
-   git clone https://github.com/SEU-USUARIO/reserva-salas.git
+   git clone https://github.com/DONO/reserva-salas.git
    cd reserva-salas
    ```
-   Clonar direto o Garage4Labs/reserva-salas funciona para olhar, mas o push vai falhar: use o seu.
+   Clonar direto o Garage4Labs/reserva-salas funciona para olhar, mas o push vai falhar: use o do grupo.
 3. Confira o ambiente:
    ```
    node --version      # precisa ser 20 ou mais novo
