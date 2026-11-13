@@ -14,6 +14,8 @@ SPEC → plano → teste vermelho → código → teste verde → revisão → c
 1. **Uma pessoa do grupo** abre **https://github.com/Garage4Labs/reserva-salas**, clica em **Use this template → Create a new repository**, dá o nome `reserva-salas` e clica em **Create repository**. Depois, em **Settings → Collaborators**, convida o resto do grupo.
 2. **Todos** aceitam o convite, clonam o repositório do grupo (troque DONO pelo usuário de quem criou) e entram na pasta clonada:
    ```
+   mkdir ~/aula      # a pasta de trabalho da disciplina (~ é a sua pasta de usuário)
+   cd ~/aula
    git clone https://github.com/DONO/reserva-salas.git
    cd reserva-salas
    ```
@@ -47,7 +49,7 @@ Abra http://localhost:3000/salas no navegador. Em outro terminal, crie uma reser
 
 Pare o servidor (Ctrl+C) e abra o agente **dentro da pasta do projeto**. O Claude só enxerga a pasta onde foi aberto: fora dela, ele não acha o `AGENTS.md` nem a SPEC.
 ```
-cd reserva-salas      # se ainda não estiver nela
+cd ~/aula/reserva-salas
 claude
 ```
 Na primeira vez, ele pede login e pergunta se você confia nesta pasta: responda que sim.
