@@ -11,8 +11,13 @@ SPEC → plano → teste vermelho → código → teste verde → revisão → c
 ---
 
 ## Passo 0 · Preparar (antes da aula, 5 min)
-1. No GitHub, abra o repositório da turma e clique em **Use this template → Create a new repository**.
-2. Clone o seu repositório e entre na pasta.
+1. No navegador, abra **https://github.com/Garage4Labs/reserva-salas** e clique em **Use this template → Create a new repository**. Owner: você. Nome: `reserva-salas`. Clique em **Create repository**.
+2. Clone o **seu** repositório (troque SEU-USUARIO pelo seu usuário do GitHub) e entre na pasta clonada:
+   ```
+   git clone https://github.com/SEU-USUARIO/reserva-salas.git
+   cd reserva-salas
+   ```
+   Clonar direto o Garage4Labs/reserva-salas funciona para olhar, mas o push vai falhar: use o seu.
 3. Confira o ambiente:
    ```
    node --version      # precisa ser 20 ou mais novo
@@ -40,7 +45,12 @@ Abra http://localhost:3000/salas no navegador. Em outro terminal, crie uma reser
 > **Pergunte à turma:** e se eu pedir uma reserva no passado? Troque as datas por `2025-01-01` e repita:
 > a reserva é criada. Esse é o defeito de hoje.
 
-Pare o servidor (Ctrl+C) e abra o agente na pasta do projeto: `claude`
+Pare o servidor (Ctrl+C) e abra o agente **dentro da pasta do projeto**. O Claude só enxerga a pasta onde foi aberto: fora dela, ele não acha o `AGENTS.md` nem a SPEC.
+```
+cd reserva-salas      # se ainda não estiver nela
+claude
+```
+Na primeira vez, ele pede login e pergunta se você confia nesta pasta: responda que sim.
 
 ## Passo 2 · O agente lê o contexto antes de agir (10 min)
 **Prompt 1:**
