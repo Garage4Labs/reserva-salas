@@ -108,7 +108,6 @@ Erro que vale registrar vira lição em `docs/licoes/`.
 |---|---|
 | `Author identity unknown` no commit | Passo 0.4 (`git config`) |
 | `curl` dá erro estranho no Windows | No PowerShell, `curl` não é o curl de verdade: use o `Invoke-RestMethod` do passo 1 |
-| No Windows, o revisor responde BLOQUEADO dizendo que não pôde rodar `npm test` | O revisor só tem a ferramenta Bash, que não existe no PowerShell. Rode `npm test` você mesmo e mostre o resultado a ele |
 | O agente já começa editando arquivo | Você não ativou o *plan mode* (Shift+Tab) |
 | O agente não fala do caso de borda | Pergunte: "E se a reserva começar exatamente agora?" |
 | Me perdi | `git stash` e acompanhe pela tela; depois da aula, `git fetch` e `git switch lab-1-solucao` |

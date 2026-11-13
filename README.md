@@ -27,6 +27,7 @@ Invoke-RestMethod -Method Post -Uri http://localhost:3000/reservas -ContentType 
 ```
 
 ## Aula a aula
+- **Desafios:** [docs/desafios.md](docs/desafios.md), para quem terminar antes.
 - **Aula 1:** siga o [roteiro da Aula 1](docs/roteiro-aula-1.md). Ficou para trás? A branch `lab-1-solucao` é publicada depois da aula (`git fetch` e `git switch lab-1-solucao`).
 
 ## O que tem aqui
