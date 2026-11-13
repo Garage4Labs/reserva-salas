@@ -19,8 +19,15 @@ npm run hooks:git
 Testar na mão (outro terminal):
 ```bash
 curl -X POST http://localhost:3000/reservas -H "content-type: application/json" \
-  -d '{"sala":"lab-1","inicio":"2026-12-01T14:00:00-03:00","fim":"2026-12-01T16:00:00-03:00","responsavel":"prof.ana"}'
+  -d '{"sala":"lab-1","inicio":"2030-03-11T14:00:00-03:00","fim":"2030-03-11T16:00:00-03:00","responsavel":"prof.ana"}'
 ```
+No Windows PowerShell, `curl` não é o curl de verdade. Use:
+```powershell
+Invoke-RestMethod -Method Post -Uri http://localhost:3000/reservas -ContentType 'application/json' -Body '{"sala":"lab-1","inicio":"2030-03-11T14:00:00-03:00","fim":"2030-03-11T16:00:00-03:00","responsavel":"prof.ana"}'
+```
+
+## Aula a aula
+- **Aula 1:** siga o [roteiro da Aula 1](docs/roteiro-aula-1.md). Ficou para trás? A branch `lab-1-solucao` é publicada depois da aula (`git fetch` e `git switch lab-1-solucao`).
 
 ## O que tem aqui
 | Arquivo | Para que serve | Aula |
